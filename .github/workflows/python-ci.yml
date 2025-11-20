@@ -1,9 +1,8 @@
 name: Python CI
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
+  pull_request:          # ТЕК PR кезінде жұмыс істейді
+    branches: [ "main" ] # main-ға ашылған PR-лар үшін
 
 jobs:
   test:
@@ -33,3 +32,4 @@ jobs:
         with:
           name: test-report
           path: test-results/report.xml
+
